@@ -50,16 +50,36 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
    margin-top:-10px;
 }
 #photos{
-   position:relative;
+	position:relative;
    margin-top:-500px;
 }
 #home{
-position: relative;
-margin-top:-100px;
+	position: relative;
+	margin-top:-100px;
 }
-#main {margin-left: 120px}
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+
+#main {
+  margin-left: 120px; 
+   -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  padding: 20px;
+}
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0;width: 100%;}}
+@media only screen and (max-width:700px) {
+#main {margin-left: 0}
+.row {   
+    flex-direction: column;
+  }
+
+}
 </style>
 <body class="w3-black">
 
@@ -95,6 +115,7 @@ margin-top:-100px;
 </div>
 
 <!-- Page Content -->
+<div class="row">
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
     <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
@@ -108,7 +129,7 @@ margin-top:-100px;
     <hr style="width:200px" class="w3-opacity">
     <p style="color:white;">I have tried to make the app attractive and <br> user friendly so that the users have a <br> great shopping experience.</p>
     <img class="wishlist" src="X Mockuphome.png"  width ="260px" height="520px"> 
-    <h3 class="w3-padding-16 w3-text-light-grey">USERFLOW</h3>
+    <h3 class=" w3-text-light-grey">USERFLOW</h3>
     <img class="flow" src="Frameuserflow1.png"  width ="1200px" height="800px">
     <h3 class="w3-padding-16 w3-text-light-grey">TYPOGRAPHY & COLORS </h3>
     <p class ="w3-center">  Noto Sans </p>
@@ -126,7 +147,7 @@ margin-top:-100px;
     <img class="WIREFRAMES" src="Wishlist.png" width ="270px" height="480px">
     <img class="WIREFRAMES" src="Profile.png" width ="270px" height="480px">
     <img class="WIREFRAMES" src="Place Order.png"  width ="270px" height="480px">
-    <img class="WIREFRAMES" src="item description.png"  width ="270px" height="540px">
+    <img class="WIREFRAMES" src="Item description.png"  width ="270px" height="540px">
   <!-- End About Section -->
   </div>
    <!-- Sitemap Section -->
@@ -239,6 +260,7 @@ margin-top:-100px;
   </div>
    <!-- End Contact Section -->
 
+</div>
 </div>
 <!-- END PAGE CONTENT -->
 
