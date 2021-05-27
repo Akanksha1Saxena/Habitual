@@ -14,34 +14,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
  .wishlist{
 
-position: relative;
-top: -200px;
-right:-600px;
+	position: relative;
+	top: -200px;
+	right:-600px;
 	
 }
 .uicolor{
-margin-left:13.8em;
+	margin-left:13.8em;
 	
 }
 .WIREFRAMES{
-   width :30%;
+	width :30%;
    padding:45px;
    float: left;
   }
-.screen1{
-   width :30%;
+  .screen1{
+  	width :30%;
    padding:40px;
   }
-.screenp{
-   width :30%;
+   .screenp{
+  	width :30%;
    padding:40px;
   }
    .screenw{
   	width :30%;
    padding:40px;
   }
-.screenc{
-   width :30%;
+   .screenc{
+  	width :30%;
    padding:40px;
   }
  
@@ -50,17 +50,17 @@ margin-left:13.8em;
    margin-top:-10px;
 }
 #photos{
-   position:relative;
+	position:relative;
    margin-top:-500px;
 }
 #home{
- position: relative;
- margin-top:-200px;
+	position: relative;
+	margin-top:-200px;
 }
 .row {  
   display: -ms-flexbox; /* IE10 */
   display: flex;
- -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
 
@@ -68,24 +68,24 @@ margin-left:13.8em;
 
 #main {
   margin-left: 120px; 
-  -ms-flex: 70%; /* IE10 */
+   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   padding: 20px;
 }
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width:700px) {
 #main {margin-left: 0}
+#home{
+	position:relative;
+    margin-left:3.80em;
+}
 .row {   
     flex-direction: column;
   }
-#home{
-    position:relative;
-    margin-left:9.80em;
-}
+
 }
 </style>
 <body class="w3-black">
-
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -103,7 +103,7 @@ margin-left:13.8em;
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>FEEDBACK</p>
+    <p>CONTACT</p>
   </a>
 </nav>
 
@@ -113,7 +113,7 @@ margin-left:13.8em;
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#onboard" class="w3-bar-item w3-button" style="width:25% !important">SCREENS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">FEEDBACK</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
 
@@ -130,18 +130,23 @@ margin-left:13.8em;
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Idea and Goal</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p style="color:white;">I have tried to make the app attractive and <br> user friendly so that the users have a <br> great shopping experience.</p>
+    <p style="color:white;">Habitual is an e-commerce application designed on figma. <br>I have tried to make the app attractive and <br> user friendly so that the users have a  great  shopping experience.</p>
+    <p style="color:white;">As a begginer I designed on Figma because of its cool features like <br> Frames,Prototyping,Colour libraries and etc.</p>
+    <p style="color:white;">I have used plugins like  autoflow,iconify,humaaans for figma,blush <br> to design Habitual.</p>
     <img class="wishlist" src="X Mockuphome.png"  width ="260px" height="520px"> 
-    <h3 class=" w3-text-light-grey">USERFLOW</h3>
+    <h3 class=" w3-text-light-grey"style="position: relative;margin-top: -100px;">USERFLOW</h3>
+    <hr style="width:160px" class="w3-opacity">
     <img class="flow" src="Frameuserflow1.png"  width ="1200px" height="800px">
     <h3 class="w3-padding-16 w3-text-light-grey">TYPOGRAPHY & COLORS </h3>
-    <p class ="w3-center" style="color:white";>  Noto Sans </p>
-    <p class ="w3-center" style="color:white";>Semi Bold 24 px </p>
-    <p class ="w3-center"style="color:white";>Semi Bold 18px </p>
-    <p class ="w3-center"style="color:white";>Regular   14px </p>
+    <hr style="width:320px" class="w3-opacity">
+    <p class ="w3-center">  Noto Sans </p>
+    <p class ="w3-center">Semi Bold 24 px </p>
+    <p class ="w3-center">Semi Bold 18px </p>
+    <p class ="w3-center">Regular   14px </p>
     <img class="uicolor" src="Frame 1colors.png"  width ="600px" height="800px">
 
     <h3 class="w3-padding-16 w3text--light-grey" style="color: white">WIREFRAMES</h3>
+    <hr style="width:200px" class="w3-opacity">
     <img class="WIREFRAMES" src="Welcome pagewelcome.png" width ="270px" height="480px">
     <img class="WIREFRAMES" src="Sign  upaccount.png" width ="270px" height="480px">
     <img class="WIREFRAMES" src="Successfully signed up.png" width ="270px" height="480px">
@@ -176,7 +181,7 @@ margin-left:13.8em;
   <!-- Onboarding Section -->
   <div class="w3-padding-64 w3-content" id="onboard">
     <h2 class="w3-text-light-grey">ONBOARDING</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:230px" class="w3-opacity">
     <img class="screen1" src="X Mockupsc1.png"  width ="240px" height="500px">
     <img class="screen1"src="X Mockupsc2.png"  width ="240px" height="500px">
     <img class="screen1"src="X Mockups1.png"  width ="240px" height="500px">
@@ -198,7 +203,7 @@ margin-left:13.8em;
     <!--  Search Section -->
   <div class="w3-padding-64 w3-content" style="position:relative;top:-500px;"id="search">
     <h2 class="w3-text-light-grey">SEARCH PRODUCTS</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <hr style="width:310px" class="w3-opacity">
     <p style="margin-left:0.8em;" >The user can search products by clicking on the search icon in the navigation bar.The user can also search the products by applying filters </p>
 	<img class="screen1" src="X Mockuphome.png"    width ="240px" height="500px">
 	<img class="screen1"src="X Mockupsearch1.png"  width ="240px" height="500px">
@@ -242,25 +247,18 @@ margin-left:13.8em;
     <img class="screenc"src="X Mockupc4.png"  width ="240px" height="500px">  
   </div>
   <!-- End Cart Section -->
- 
-  
+
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" style="position:relative;top:-500px;" id="contact">
-    <h2 class="w3-text-light-grey">FEEDBACK</h2>
+    <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  </div>
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> India</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:akankshasaxena045@gmail.com</p>
+    </div><br>
+  
+
    <!-- End Contact Section -->
 
 </div>
